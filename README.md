@@ -39,7 +39,7 @@ Track the time you spend on each note, folder, and even your entire vault — al
 
 ## 💡 Credits
 
-Developed by Kyxev with help from the Obsidian community.
+Developed by Ktex with help from the Obsidian community & ChatGPT
 
 ---
 
