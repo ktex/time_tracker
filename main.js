@@ -110,7 +110,7 @@ module.exports = class TimeTrackerPlugin extends Plugin {
 
     const file = this.app.vault.getAbstractFileByPath(currentPath);
 if (file instanceof TFolder) {
-      // Dossier → on cumule toutes les notes
+      // Folder → We collect all files time.
       const collectTimes = (folder) => {
         for (const child of folder.children) {
           if (child instanceof TFile) {
@@ -122,7 +122,7 @@ if (file instanceof TFolder) {
       };
       collectTimes(file);
     } else {
-      // Note → on prend juste le temps de cette note
+      // Note → We just collect the time of this note
       time = this.timePerNote[currentPath] || 0;
     }
 
